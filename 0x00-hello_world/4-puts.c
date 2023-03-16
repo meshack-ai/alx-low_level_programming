@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- *ALC C Programmming
+ *Start
+ *ALX C Programmming
 */
 int main(void)
 {
