@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *Start
- *ALX C Programmming
-*/
+*Start
+*ALX C Programmming
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
