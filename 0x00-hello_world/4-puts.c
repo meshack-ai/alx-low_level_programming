@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-*Start
-*ALX C Programmming
+ *main - main entry point
+ *Return: always 0 (success)
  */
 int main(void)
 {
