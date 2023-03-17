@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-  *This is a
-  *C program
-  */
+ *main-Entry point in c program
+ *Return: always 0 Success
+ */
 int main(void)
 {
 
