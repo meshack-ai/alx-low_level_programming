@@ -1,38 +1,84 @@
-#include <stdio.h>
-                
-                
-                
+#include "main.h"
+		
+#include <stdlib.h>
+		
 /**
-                
- * main - prints all arguments it receives
-                
- * @argc: number of arguments
-                
- * @argv: array of arguments
-                
- *
-                
- * Return: Always 0 (Success)
-                
+		
+ * str_concat - get ends of input and adds them  together for size
+		
+ * @s1: input 1 to concat
+		
+ * @s2: input 2 to concat
+		
+ * Return: concatenate of s1 and s2
+		
  */
-                
-int main(int argc, char *argv[])
-                
+		
+char *str_concat(char *s1, char *s2)
+		
 {
-                
-        int i;
-                
-                
-        for (i = 0; i < argc; i++)
-                
-        {
-                
-                printf("%s\n", argv[i]);
-                
-        }
-                
-                
-        return (0);
-                
+		
+	char *conct;
+		
+	int i, ci;
+		
+
+		
+	if (s1 == NULL)
+		
+		s1 = "";
+		
+	if (s2 == NULL)
+		
+		s2 = "";
+		
+
+		
+		i = ci = 0;
+		
+	while (s1[i] != '\0')
+		
+		i++;
+		
+	while (s2[ci] != '\0')
+		
+		ci++;
+		
+	conct = malloc(sizeof(char) * (i + ci + 1));
+		
+
+		
+	if (conct == NULL)
+		
+		return (NULL);
+		
+	i = ci = 0;
+		
+	while (s1[i] != '\0')
+		
+	{
+		
+		conct[i] = s1[i];
+		
+		i++;
+		
+	}
+		
+
+		
+	while (s2[ci] != '\0')
+		
+	{
+		
+		conct[i] = s2[ci];
+		
+		i++, ci++;
+		
+	}
+		
+	conct[i] = '\0';
+		
+	return (conct);
+		
 }
 
