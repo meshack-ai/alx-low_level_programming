@@ -4,13 +4,13 @@
 		
 /**
 		
- * str_concat - get ends of input and adds them  together for size
+ * str_concat - get ends of input and add together for size
 		
- * @s1: input 1 to concat
+ * @s1: input one to concat
 		
- * @s2: input 2 to concat
+ * @s2: input two to concat
 		
- * Return: concatenate of s1 and s2
+ * Return: concat of s1 and s2
 		
  */
 		
